@@ -2,7 +2,10 @@
   "name": "@nx-angular-i18n-example/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "i18n:extract": "nx run i18n-app:extract-i18n",
+    "i18n:build": "nx run i18n-app:build --localize"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
@@ -28,6 +31,7 @@
     "@angular/cli": "~16.2.0",
     "@angular/compiler-cli": "~16.2.0",
     "@angular/language-service": "~16.2.0",
+    "@angular/localize": "^16.2.5",
     "@nx/eslint-plugin": "16.8.1",
     "@nx/jest": "16.8.1",
     "@nx/js": "16.8.1",
